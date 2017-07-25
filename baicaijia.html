@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>白菜价</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/swiper.minn.css">
+    <link rel="stylesheet" href="css/baicaijia.css"/>
+</head>
+<body>
+<div class="head">
+    <div class="content">白菜价淘宝内部</div>
+</div>
+<div id="topNav" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide active"><span>全部</span></div>
+        <div class="swiper-slide"><span>热销</span></div>
+        <div class="swiper-slide"><span>9块邮</span></div>
+        <div class="swiper-slide"><span>19块邮</span></div>
+        <div class="swiper-slide"><span>数码家电</span></div>
+        <div class="swiper-slide"><span>居家</span></div>
+        <div class="swiper-slide"><span>美食</span></div>
+        <div class="swiper-slide"><span>男装</span></div>
+        <div class="swiper-slide"><span>女装</span></div>
+        <div class="swiper-slide"><span>鞋包</span></div>
+        <div class="swiper-slide"><span>文体</span></div>
+        <div class="swiper-slide"><span>母婴</span></div>
+        <div class="swiper-slide"><span>鞋包</span></div>
+    </div>
+</div>
+<a href="">
+<div class="shang">
+    <img src="images/yyyy.jpg" alt=""/>
+    <div class="wenzi">
+        <p>包邮</p>
+        <p>0元</p>
+    </div>
+</div>
+</a>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/swiper.minn.js"></script>
+<script type="text/javascript">
+    //参考文档：http://www.swiper.com.cn/api/index.html
+    var mySwiper = new Swiper('#topNav', {
+        freeMode: true,
+        slidesPerView: 'auto'//设置slider容器能够同时显示的slides数量(carousel模式)。 可以设置为number或者 'auto'则自动根据slides的宽度来设定数量。
+    });
+
+    mySwiper.on('tap', function(swiper,e) {
+        $("#topNav .active").removeClass('active')
+        $("#topNav .swiper-slide").eq(swiper.clickedIndex).addClass('active')
+
+    })
+</script>
+</body>
+</html>

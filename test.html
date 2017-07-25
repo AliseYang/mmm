@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+</head>
+<body>
+<div id="jd"></div>
+<div id="yh"></div>
+
+<div id="tm"></div>
+
+
+<script src="./js/jquery.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            type:"get",
+            url:"http://127.0.0.1:3000/api/getgsshop",
+            success: function (data) {
+                console.log(data);
+                var jshopn = data.result[0].shopName;
+                var jshopid = data.result[0].shopId;
+                $("#jd").html(jshopid + jshopn);
+                var yshopn = data.result[1].shopName;
+                var yshopid = data.result[1].shopId;
+                $("#yh").html(yshopid + yshopn);
+                var tshopn = data.result[2].shopName;
+                var tshopid = data.result[2].shopId;
+                $("#tm").html(tshopid + tshopn);
+                $("#jd").click(function(){
+                    $.ajax({
+                        type:"get",
+                        url:"//127.0.0.1:3000/api/getgsproduct?shopid="+jshopid+"&areaid=0",
+                        success:function(data){
+                            console.log(data);
+                        }
+                    });
+                });
+        }
+        });
+    });
+</script>
+</body>
+</html>

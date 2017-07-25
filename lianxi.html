@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title></title>
+    <style>
+        .clearfix:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear:both;
+            visibility: hidden;
+        }
+
+        .clearfix{
+            zoom:1;
+        }
+       .zz{
+           height: 100px;
+
+       }
+        .ww{
+            height: 100px;
+        }
+        .zz > .aa{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: #000066;
+        }
+        .zz > .bb{
+            width: 100px;
+            float: right;
+            height: 100px;
+            background-color: #003eff;
+        }
+        .ww > .cc{
+            background-color: #009900;
+            width: 100px;
+            height: 100px;
+            float: left;
+            position :  absolute;
+        }
+        .ww > .dd{
+            background-color: brown;
+            height: 100px;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="zz  clearfix">
+    <div class="aa">aa</div>
+    <div class="bb">bb</div>
+</div>
+<div class="ww clearfix">
+    <div class="cc">cc</div>
+    <div class="dd">dddddddd</div>
+</div>
+</body>
+</html>

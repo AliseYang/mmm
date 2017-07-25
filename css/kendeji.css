@@ -1,0 +1,66 @@
+.head{
+    height: 44px;
+    width: 100%;
+    background-color: #f4483e;
+    color: #ffffff;
+}
+.deng{
+    height: 35px;
+    /*border-bottom: 1px solid #f1f1f1;*/
+    /*border-top: 1px solid #f1f1f1;*/
+    font-size: 14px;
+    overflow: hidden;
+    background-color: #ffffff;
+
+}
+
+.lu{
+    height: 32px;
+    width: 33%;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+    line-height: 32px;
+    float: left;
+}
+
+.ce{
+    height: 32px;
+    width: 32%;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+    line-height: 30px;
+
+    float: left;
+}
+
+.bu{
+    height: 32px;
+    width: 33%;
+    float: right;
+
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    border: 1px solid #f1f1f1;
+    border-right: none;
+}
+.shou{
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    font-size: 10px;
+    background-color: #ffffff;
+
+}
+.zz{
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    font-size: 10px;
+    background-color: #ffffff;
+}
+.character{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}

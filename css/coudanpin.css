@@ -1,0 +1,109 @@
+body{
+    background-color: #f1f1f1;
+}
+.head{
+    height: 42px;
+}
+.jingdong{
+    height: 37px;
+    background-color: #ffffff;
+    width: 100%;
+}
+.jingdong > .jing{
+    height: 37px;
+    float: left;
+    width: 26%;
+}
+.jing > .aa{
+    height: 37px;
+    border: none;
+
+}
+.jingdong > .hua{
+    height: 37px;
+    float: left;
+    width: 36%;
+
+}
+.hua > .bb{
+    height: 37px;
+    border: none;
+    width: 100px;
+
+}
+.bb > option{
+    width: 30px;
+}
+.jingdong > .jia{
+    height: 37px;
+    float: left;
+    width: 27%;
+
+}
+.jia > .cc{
+    height: 37px;
+    border: none;
+    border-right: 1px solid #f1f1f1;
+
+}
+.jingdong > .sou{
+    height: 32px;
+    float: right;
+    width: 10%;
+    padding-top: 5px;
+    padding-right: 3px;
+
+}
+.sou> img{
+    height: 25px;
+    width: 25px;
+    opacity:0.4;
+}
+.commoditys{
+    width: 100%;
+    padding: 0 6px;
+}
+.commoditys > a {
+    display: block;
+    width: 50%;
+    padding-right: 6px;
+    box-sizing: border-box;
+    float: left;
+}
+a > .shang{
+    height: 240px;
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+.shang > img{
+    height: 154px;
+
+
+}
+.shang > .character{
+    width: 100%;
+    padding-left: 5px;
+    font-size: 12px;
+
+}
+.shang > .characters{
+    padding-right: 6px;
+
+}
+.characters > .span{
+    padding-left: 5px;
+    font-size: 16px;
+    color: red;
+}
+.characters > input{
+    background-color: #ff9501;
+    height: 25px;
+    width: 60px;
+    float: right;
+    border-radius: 4px;
+    color: #ffffff;
+
+}

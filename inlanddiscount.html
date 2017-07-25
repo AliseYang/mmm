@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>国内折扣</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/zhekou.css"/>
+    <div class="head">
+        <img src="images/header_logo.png" alt="" class="logo"/>
+        <img src="images/header_app.png" alt="" class="app"/>
+    </div>
+    <div class="inland">
+        <a href="">
+            <ul class="clearfix">
+                 <!--<li>-->
+                     <!--<div class="img">-->
+                        <!--<img src="images/55d2cf3eNc2d117d0.jpg" alt=""/>-->
+                     <!--</div>-->
+                     <!--<div class="character">西域晋江</div>-->
+                     <!--<div class="price">19.88元</div>-->
+                     <!--<div class="jingdong">京东商城 | 10:12</div>-->
+                 <!--</li>-->
+            </ul>
+        </a>
+    </div>
+    <div class="deng">
+        <div class="lu">登陆</div>
+        <div class="ce">注册</div>
+        <div class="bu">返回顶部</div>
+
+    </div>
+    <div class="shou">
+        手机APP下载慢慢买手机版---掌上比价平台
+    </div>
+    <div class="zz">
+        m.manmanbuy.com
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/zhekou.js"></script>
+    <script src="js/template.js"></script>
+    <script type="text/html" id="zhekou">
+        {{each result as value i }}
+        <li>
+            <div class="img">
+                <!--<img src="{{value.productImg}}" alt=""/>-->
+                {{#value.productImg}}
+            </div>
+            <div class="character">{{value.productName}}</div>
+            <div class="price">{{value.productPrice}}</div>
+            <div class="jingdong">{{value.productFrom}} | {{value.productTime}}</div>
+        </li>
+        {{/each}}
+    </script>
+</head>
+<body>
+
+</body>
+</html>

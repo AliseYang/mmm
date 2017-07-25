@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>电视机</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/dianshi.css"/>
+
+</head>
+<body>
+<div class="head">
+    <a href="">
+        <img src="images/header_logo.png" alt="" class="logo"/>
+        <img src="images/header_app.png" alt="" class="app"/>
+    </a>
+</div>
+<section class="search">
+    <form>
+        <input type="search" placeholder="请输入比价商品" class="input1"/>
+        <input type="submit" value="搜索" class="input2"/>
+    </form>
+</section>
+<div class=" page">
+     <span>首页 > &nbsp; 全部分类 > &nbsp; 电视 ></span>
+     <input type="submit" value="筛选" class="input3"/>
+</div>
+<div class="menus">
+    <!--<div class="menu clearfix">-->
+        <!--<img src="images/qq3.png" alt=""/>-->
+        <!--<div class="describe ">-->
+            <!--<p>-->
+                <!--电视机555522222222222222222222222222222222222222-->
+            <!--</p>-->
+            <!--<p>1990</p>-->
+            <!--<p>评论</p>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<div class="pages clearfix">
+    <form action="" method="post">
+        <a href=""><input type="button" value="上一页"/></a>
+        <select>
+            <option value="第1页">第1页</option>
+            <option value="第2页">第2页</option>
+            <option value="第3页">第3页</option>
+        </select>
+        <a href=""><input type="button" value="下一页" class="input4"/></a>
+    </form>
+</div>
+<div class="deng">
+    <div class="lu">登陆</div>
+    <div class="ce">注册</div>
+    <div class="bu">返回顶部</div>
+
+</div>
+<div class="shou">
+    手机APP下载慢慢买手机版---掌上比价平台
+</div>
+<div class="zz">
+    m.manmanbuy.com
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/dianshi.js"></script>
+<script src="js/template.js"></script>
+<script type="text/html" id="dianshi">
+    {{each result as value i }}
+    <div class="menu clearfix">
+        <img src="images/qq3.png" alt=""/>
+        <div class="describe ">
+            <p>
+                电视机555522222222222222222222222222222222222222
+            </p>
+            <p>1990</p>
+            <p>评论</p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+</html>

@@ -1,0 +1,27 @@
+body,h3,div,h1,h2,h4,h5,p,span,img,ul,li,input,ol{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+input{
+    border: none;
+    outline: none;
+
+
+}

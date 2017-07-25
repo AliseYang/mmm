@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>省钱控</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/shengqian.css"/>
+</head>
+<body>
+<div class="head">
+    <h4>省钱控</h4>
+</div>
+<div class="commodity ">
+    <div class="pin">
+
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/shengqian.js"></script>
+<script src="js/template.js"></script>
+<script type="text/html" id="shengqian">
+    {{each result as value i }}
+    <div class="com clearfix">
+        <a href="">
+            {{#value.productImgSm}}
+            <div class="describe">
+                <a href="">{{value.productName}}</a>
+                <p class="aa">{{value.productPinkage}}</p>
+                <span class="bb">{{value.productFrom}} | {{value.productTime}}</span>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+</script>
+</html>

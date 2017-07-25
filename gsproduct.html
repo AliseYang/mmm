@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>凑单品</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/coudanpin.css"/>
+</head>
+<body>
+<div class="head">
+    <h1>凑单品</h1>
+</div>
+<div class="commodity">
+   <div class="jingdong ">
+        <div class="jing">
+            <select name="" class="aa"></select>
+        </div>
+        <div class="hua">
+             <select name="" class="bb"></select>
+        </div>
+       <div class="jia">
+           <select name="" class="cc">
+               <option value="jia">全部价格</option>
+           </select>
+       </div>
+       <div class="sou">
+           <img src="images/search.png" alt=""/>
+       </div>
+   </div>
+</div>
+<div class="commoditys clearfix">
+    <!--<a href="#">-->
+        <!--<div class="shang clearfix">-->
+            <!--<img src="images/111.jpg" alt=""/>-->
+            <!--<div class="character">干以为</div>-->
+            <!--<div class="characters clearfix">-->
+                 <!--<span class="span">$199</span>-->
+                 <!--<input type="button" value="去凑单"/>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</a>-->
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/coudanpin.js"></script>
+<script src="js/template.js"></script>
+<script type="text/html" id="coudanpin">
+    {{each result as value i }}
+             <option class="one" value={{value.shopId}}>{{value.shopName}}</option>
+    {{/each}}
+</script>
+<script type="text/html" id="coudan">
+    {{each result as value i }}
+    <option value={{value.areaId}} >{{value.areaName}}</option>
+    {{/each}}
+</script>
+<script type="text/html" id="cou">
+    {{each result as value i }}
+    <a href="#" class="clearfix">
+        <div class="shang clearfix">
+            <img src="{{value.productImg}}" alt=""/>
+            <div class="character">{{value.productName}}</div>
+            <div class="characters clearfix">
+                <span class="span">{{value.productPrice}}</span>
+                <input type="button" value="去凑单"/>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+</body>
+</html>

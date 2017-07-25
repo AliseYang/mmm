@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#topNav {
+    width: 100%;
+    overflow: hidden;
+}
+#topNav .swiper-slide {
+    width:3rem;
+}
+
+#topNav .active span{
+    color:#FF2D2D;
+}

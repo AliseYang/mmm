@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>慢慢买项目</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/html" id="list">
+        {{each result as value }}
+        <li>
+            <a href="{{value.titlehref}}">
+                {{#value.img}}
+                <h3>{{value.name}}</h3>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</head>
+<body>
+    <div class="head">
+        <img src="images/header_logo.png" alt="" class="logo"/>
+        <img src="images/header_app.png" alt="" class="app"/>
+    </div>
+    <section class="section clearfix">
+        <form class="search">
+            <input type="search" placeholder="请输入比价商品" class="bijia" />
+            <input type="submit" value="搜索" class="submit"/>
+        </form>
+    </section>
+    <div class="nav">
+      <ul class="clearfix">
+
+      </ul>
+    </div>
+    <div class="menus">
+      <div class="discount">
+        <h4>超值折扣推荐</h4>
+        <img src="images/header_app.png" alt=""/>
+      </div>
+      <!--<div class="commodity clearfix">-->
+          <!--<img src="images/2016100013582395395.jpg" alt=""/>-->
+          <!--<div class="describe">-->
+              <!--<h5>双十一预售：日本进口尤妮佳/Moony婴儿纸尿裤</h5>-->
+              <!--<p>10.9元</p>-->
+
+              <!--<span>京东商城 | 10-23 10:22</span>-->
+              <!--<span>☆1</span>-->
+          <!--</div>-->
+      <!--</div>-->
+    </div>
+    <div class="zui">
+
+        <div class="hui">更多优惠信息 >></div>
+    </div>
+    <div class="bai1"></div>
+    <div class="pinpai">
+       <h5>品牌排行</h5>
+        <img src="images/header_app.png" alt=""/>
+    </div>
+    <div class="bai"></div>
+    <div class="deng">
+        <div class="lu">登陆</div>
+        <div class="ce">注册</div>
+        <div class="bu">返回顶部</div>
+
+    </div>
+    <div class="shou">
+        手机APP下载慢慢买手机版---掌上比价平台
+    </div>
+    <div class="zz">
+        m.manmanbuy.com
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/template.js"></script>
+    <script type="text/html" id="pro">
+        {{each result as value i }}
+        <div class="commodity clearfix">
+            {{#value.productImgSm}}
+            <div class="describe">
+                <h5>{{value.productName}}</h5>
+                <p>{{value.productPinkage}}</p>
+
+                <span>{{value.productFrom}} | {{value.productTime}}</span>
+                <span>☆{{value.productComCount}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</body>
+    
+</html>

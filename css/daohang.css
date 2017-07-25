@@ -1,0 +1,22 @@
+.head{
+    height: 30px;
+    background-color:  #ff841d;
+    padding: 10px;
+}
+.link{
+    width: 100%;
+    padding: 0 10px;
+    float: left;
+}
+.link  > .wang{
+    height: 20px;
+    width: 40%;
+    background-color: #f4f4f4;
+    border: 1px solid #bfbfbf;
+    padding: 10px 8px;
+    margin-top: 8px;
+    float: left;
+    margin-right: 8px;
+
+
+}
